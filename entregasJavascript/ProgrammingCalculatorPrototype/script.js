@@ -3,17 +3,15 @@ let cadena="", conversion=0, transicion="";
 function octal(){
     var octales =document.getElementById("octales").value
     if(octales){
-        document.getElementById("uno").disabled = false;
-        document.getElementById("dos").disabled = false;
-        document.getElementById("tres").disabled = false;
-        document.getElementById("cuatro").disabled = false;
-        document.getElementById("cinco").disabled = false;
-        document.getElementById("seis").disabled = false;
-        document.getElementById("siete").disabled = false;
-        if (octales != decimales){
-           document.getElementById("ocho").disabled=true;
-           document.getElementById("nueve").disabled=true; 
-        }
+        document.getElementById("uno");
+        document.getElementById("dos");
+        document.getElementById("tres");
+        document.getElementById("cuatro");
+        document.getElementById("cinco");
+        document.getElementById("seis");
+        document.getElementById("siete");
+        document.getElementById("ocho");
+        document.getElementById("nueve"); 
     } 
     var entero = document.getElementById("txtDisplay").value;
     let octal = (entero % 8).toString();
@@ -26,19 +24,23 @@ function octal(){
     transicion = "octales";
 }
 
+
+// if(cadena!=="0"){
+//     document.getElementById("decimales").disabled=false;
+//     console.log("Soy diferente de cero");
+// }
 function decimal(){
-    document.getElementById("decimales").disabled=false;
-    var decimales = document.getElementById("decimales").value
+    let decimales = document.getElementById("decimales");
     if(decimales){
-        document.getElementById("uno").disabled = false;
-        document.getElementById("dos").disabled = false;
-        document.getElementById("tres").disabled = false;
-        document.getElementById("cuatro").disabled = false;
-        document.getElementById("cinco").disabled = false;
-        document.getElementById("seis").disabled = false;
-        document.getElementById("siete").disabled = false;
-        document.getElementById("ocho").disabled = false;
-        document.getElementById("nueve").disabled = false;
+        document.getElementById("uno");
+        document.getElementById("dos");
+        document.getElementById("tres");
+        document.getElementById("cuatro");
+        document.getElementById("cinco");
+        document.getElementById("seis");
+        document.getElementById("siete");
+        document.getElementById("ocho");
+        document.getElementById("nueve");
     } 
     let number = document.getElementById("txtDisplay").value;
     let sumaBin = 0;
@@ -48,22 +50,22 @@ function decimal(){
     document.getElementById("txtDisplay").value =sumaBin;
     transicion = "decimales";
 }
-
-
+    
+    
 function binario(){
-
+    console.log("Entre a la operación!!!");
     var binarios =document.getElementById("binarios").value
     if(binarios){
-        document.getElementById("uno").disabled = false;
+        document.getElementById("uno");
         if(binarios != octales){
-            document.getElementById("dos").disabled = true;
-            document.getElementById("tres").disabled = true;
-            document.getElementById("cuatro").disabled = true;
-            document.getElementById("cinco").disabled = true;
-            document.getElementById("seis").disabled = true;
-            document.getElementById("siete").disabled = true;
-            document.getElementById("ocho").disabled = true;
-            document.getElementById("nueve").disabled = true;
+            document.getElementById("dos");
+            document.getElementById("tres");
+            document.getElementById("cuatro");
+            document.getElementById("cinco");
+            document.getElementById("seis");
+            document.getElementById("siete");
+            document.getElementById("ocho");
+            document.getElementById("nueve");
         }
     }
     var numBin = document.getElementById("txtDisplay").value;
@@ -84,5 +86,6 @@ function agregar(num){
 }
 function limpiar(){
     // limpiar2();
-    document.getElementById("txtDisplay").value="0";
+    document.getElementById("txtDisplay").value="";
+    cadena="";
 }
