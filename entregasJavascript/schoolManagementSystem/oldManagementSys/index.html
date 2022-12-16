@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Registro Escuela</h1>
+    <section>
+        <form action="#" id="formSchool" name="registor" method="post">
+            <fieldset>
+                <legend>Datos Personales</legend>
+                <label for="doc">Documento</label>
+                <input type="number" id="doc" autofocus required minlength="10"/>
+                <br>
+                <label for="name">Nombres</label>
+                <input type="text" id="name" required minlength="3"/>
+                <br>
+                <label for="lstName">Apellidos</label>
+                <input type="text" id="lstName" required="required" minlength="3"/>
+                <br>
+                <label for="adress">Direccion</label>
+                <input type="text" id="adress" required="required" minlength="3">
+                <br>
+                <label for="tel">Telefono</label>
+                <input type="number" id="tel" required="required" minlength="3">
+                <br>
+                <label for="mail">Correo</label>
+                <input type="email" id="mail" required="required" minlength="3">
+                <br>
+                <label for="tutor">Acudiente</label>
+                <input type="text" id="tutor" required="required" minlength="2">
+                <br>
+                <label for="celTutor">Ceular Acudiente</label>
+                <input type="number" id="celTutor">
+                <br>                
+                <input type ="submit" id="sendBtn" value="Enviar" onclick="register()">
+                <button id="findBtn" onclick="search()">Buscar</button>
+                <button id="deleteBtn" onclick="remove()">Eliminar</button>
+                <button id="updateBtn" onclick="updates()">Actualizar</button>
+            </fieldset>
+            <div>
+                <button type="reset" id="notesBtn" onclick="formNotes();">Ingresar Notas</button>
+                <div id="usserNotes"></div>
+                <table id="regNotes"></table>
+                <div id="oprNote"></div>
+                <div id="definitiveNote"></div>
+            </div>
+        </form>
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>

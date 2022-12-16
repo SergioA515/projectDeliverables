@@ -1,0 +1,133 @@
+        section {
+            border: slateblue;
+            background-color: slateblue;
+        }
+        div.calculator{
+            padding: 10px;
+            color: #000;
+            background-color: rgba(239, 112, 239, 0.526);
+            margin: 40px auto;
+            width: 320px;
+            height: 510px;
+            border: none;
+        }
+        
+        header.display{
+            
+            width: 302px;
+            color: black;
+            background-color: rgb(94, 165, 228);
+            margin-left: 0px;
+            overflow: hidden;
+        }
+        button{
+            border-radius: 10%;
+        }
+        header.display button.back{
+            height: 20px;
+            width: 30px;
+            border: none;
+            cursor: pointer;
+            background-color: blue;
+            transition: transform 0.1s ease;
+            margin-left: 265px;
+            margin-top: 80px;
+        }
+        header.display button.back:hover{
+            transform: scale(1.10);
+        }
+
+        header.display input.value{
+            
+            background-color: transparent;
+            border: none;
+            color: black;
+            font-size: 20px;
+            font-style: italic;
+            text-align: right;
+            outline: none;
+            position: absolute;
+            margin-left: -295px;
+            width: 299px;
+            height: 100px;
+        }
+        section.buttons {
+            background-color: rgba(239, 112, 239, 0.065);
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(60px, 1fr));
+            row-gap: 15px;
+            column-gap: 15px;
+            margin: 10px 10px 10px 10px;
+        }
+        section.buttons button {
+            border: none;
+            color: white;
+            background-color: blue;
+            cursor: pointer;
+            height: 60px;
+            width: 60px;
+            transition: transform 0.2s ease;
+        }
+        section.buttons button:hover{
+            transform: scale(1.10);
+        }
+        section.buttons button.btn-clear{
+            /* background: url(images/Calculator/Clear.svg) no-repeat center; */
+        }
+        section.buttons button.btn-brackets{
+            /* background: url(images/Calculator/Brackets.svg) no-repeat center; */
+        }
+        section.buttons button.btn-porcentage{
+            /* background: url(images/Calculator/Porcentage.svg) no-repeat center; */
+        }
+        section.buttons button.btn-divition{
+            /* background: url(images/Calculator/Divition.svg) no-repeat center; */
+        }
+        section.buttons button.btn-seven{
+            /* background: url(images/Calculator/Seven.svg) no-repeat center; */
+        }
+        section.buttons button.btn-eight{
+            /* background: url(images/Calculator/Eight.svg) no-repeat center; */
+        }
+        section.buttons button.btn-nine{
+            /* background: url(images/Calculator/Nine.svg) no-repeat center; */
+        }
+        section.buttons button.btn-prod{
+            /* background: url(images/Calculator/Prod.svg) no-repeat center; */
+        }
+        section.buttons button.btn-four{
+            /* background: url(images/Calculator/four.svg) no-repeat center; */
+        }
+        section.buttons button.btn-five{
+            /* background: url(images/Calculator/Five.svg) no-repeat center; */
+        }
+        section.buttons button.btn-six{
+            /* background: url(images/Calculator/Six.svg) no-repeat center; */
+        }
+        section.buttons button.btn-rest{
+            /* background: url(images/Calculator/Rest.svg) no-repeat center; */
+        }
+        section.buttons button.btn-one{
+            /* background: url(images/Calculator/one.svg) no-repeat center; */
+        }
+        section.buttons button.btn-two{
+            /* background: url(images/Calculator/two.svg) no-repeat center; */
+        }
+        section.buttons button.btn-three{
+            /* background: url(images/Calculator/three.svg) no-repeat center; */
+        }
+        section.buttons button.btn-sum{
+            /* background: url(images/Calculator/Sum.svg) no-repeat center; */
+        }
+        section.buttons button.btn-pow{
+            /* background: url(images/Calculator/pow.svg) no-repeat center; */
+        }
+        section.buttons button.btn-zero{
+            /* background: url(images/Calculator/Zero.svg) no-repeat center; */
+        }
+        section.buttons button.btn-Point{
+            /* background: url(images/Calculator/Point.svg) no-repeat center; */
+        }
+        section.buttons button.btn-equal{
+            /* background: url(images/Calculator/Equal.svg) no-repeat center; */
+        }

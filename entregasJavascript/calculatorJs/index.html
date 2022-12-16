@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Challenge Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <header>
+            <!-- <a href="index.html">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M11 19l-7-7 7-7m8 14l-7-7 7-7" />
+                    </svg>
+                    
+            </a> -->
+            <h1>Challenge Calculator</h1>
+        </header>
+        <section>
+            <div class="calculator">
+                <header class="display">
+                    <input type="text" class="value" readonly>
+                    <button class="back"><<</button>
+                </header>
+                
+                <section class="buttons">
+                    <button class="btn-clear">←</button>
+                    <button class="btn-equal">=</button>
+                    <button class="btn-pow"         data-opr="^">^</button>
+                    <button class="btn-porcentage"  data-opr="%">%</button>
+                    <button class="btn-divition"    data-opr="/">/</button>
+                    <button class="btn-seven"       data-num="7">7</button>
+                    <button class="btn-eight"       data-num="8">8</button>
+                    <button class="btn-nine"        data-num="9">9</button>
+                    <button class="btn-four"        data-num="4">4</button>
+                    <button class="btn-five"        data-num="5">5</button>
+                    <button class="btn-six"         data-num="6">6</button>
+                    <button class="btn-three"       data-num="3">3</button>
+                    <button class="btn-two"         data-num="2">2</button>
+                    <button class="btn-one"         data-num="1">1</button>
+                    <button class="btn-zero"        data-num="0">0</button>
+                    <button class="btn-prod"        data-opr="x">x</button>
+                    <button class="btn-sum"         data-opr="+">+</button>
+                    <button class="btn-Point"       data-opr=".">.</button>
+                    <button class="btn-rest"        data-opr="-">-</button>
+                </section>
+            </div>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
